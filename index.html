@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/login.js"></script>
+    <title>JavaScript Excercise</title>
+  </head>
+  <body class="bg-gray-200">
+    <div class="container px-3 py-20 mx-auto min-h-screen">
+      <div class=" border-2 border-transparent bg-violet-200 px-3 py-8 rounded-xl">
+        <h3 class="text-blue-600 text-3xl font-semibold py-3">Login</h3>
+        <div class="">
+          <form id="login-form" class="w-full">
+            <div class="w-full flex flex-col">
+              <label for="email" id="email-label" class="text-slate-600 text-2xl py-2">Email :</label>
+              <input type="email" name="email" id="email" class="border-2 border-slate-300 rounded-md p-2 hover:border-blue-600" required />
+            </div>
+            <div class="w-full flex flex-col">
+              <label for="email" id="password-label" class="text-slate-600 text-2xl py-2">Password :</label>
+              <input type="password" name="password" id="password" class="border-2 border-slate-300 rounded-md p-2 hover:border-blue-600" required />
+            </div>
+            <div class="flex justify-center my-8 text-xl">
+              <a href="#" class="text-blue-600 hover:text-slate-600">Forgot password?</a>
+            </div>
+            <div class="flex justify-center w-full">
+                <button type="submit" class="w-3/4 bg-blue-600 text-white text-lg font-semibold py-2 rounded-md">LOGIN</button>
+              </div>
+              <div id="alert-message" class="flex justify-center mt-6 text-red-600 text-lg"></div>
+              <div class="flex justify-center py-6">
+                <span class="text-xl">Don't have an account? <a href="register.html" class="text-blue-600 hover:text-slate-600 font-semibold">Register</a></span>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+    </div>
+    
+
+  </body>
+</html>

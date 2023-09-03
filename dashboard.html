@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/services.js"></script>
+    <title>JavaScript Excercise</title>
+  </head>
+  <body class="bg-gray-200">
+    <div class="container px-3 py-10 mx-auto min-h-screen">
+      <div
+        class="flex justify-center gap-1 p-3 my-3 border-2 border-transparent bg-violet-200 rounded-xl shadow-sm shadow-black"
+      >
+        <h1 class="text-3xl">Hello,</h1>
+        <p></p>
+        <span class="text-3xl text-red-600"><p id="name"></p></span>
+      </div>
+      <div
+        class="flex justify-center gap-1 p-3 border-2 border-transparent bg-violet-200 rounded-xl shadow-sm shadow-black"
+      >
+        <p class="text-xl">Welcome to my Shopping Notes Apps</p>
+      </div>
+      <div class="py-5">
+        <form id="add-form" class="flex justify-center gap-2">
+          <input
+            type="text"
+            id="item-name"
+            placeholder="Input item name..."
+            class="w-1/2 rounded-md p-2 border-2 border-transparent hover:border-blue-600"
+            required
+          />
+          <input
+            type="text"
+            id="quantity"
+            placeholder="Qty"
+            class="w-2/12 text-center rounded-md border-2 border-transparent hover:border-blue-600"
+            required
+          />
+          <button
+            type="submit"
+            class="bg-blue-600 text-white text-md font-semibold py-2 px-4 rounded-md hover:bg-blue-800"
+          >
+            ADD
+          </button>
+        </form>
+        <form id="delete-form" class="mt-5 justify-center flex">
+          <button
+            type=""
+            class="bg-red-600 text-white text-md font-semibold py-2 px-4 rounded-md hover:bg-red-800"
+          >
+            DELETE
+          </button>
+        </form>
+      </div>
+
+      <div class="bg-violet-200 rounded-lg p-3 shadow-sm shadow-black w-full">
+        <table
+          class="table-auto border-separate border-spacing-2 text-xl text-center border-4 w-full"
+        >
+          <thead class="border-b-2">
+            <tr>
+              <th class="border-2 border-blue-600 text-2xl">Item Name</th>
+              <th class="border-2 border-blue-600 text-2xl">Qty</th>
+            </tr>
+          </thead>
+          <tbody id="table"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
